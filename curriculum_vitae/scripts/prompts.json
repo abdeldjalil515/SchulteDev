@@ -1,0 +1,51 @@
+{
+  "shared": {
+    "structure": {
+      "pages": 4,
+      "output": "LuaLaTeX code only."
+    },
+    "pageLayout": [
+      "P1: Header, CV summary, key impacts, skills overview table (no borders).",
+      "P2: Recent roles (LBBW, Union Investment, Saloodo!, Trusted Shops).",
+      "P3: Earlier experiences, personal projects.",
+      "P4: Education, skills, career breaks; footer: AI disclaimer."
+    ],
+    "constraints": [
+      "Valid LuaLaTeX with standard packages only.",
+      "Bundled fonts only.",
+      "Exactly {{PAGES}} filled pages.",
+      "Prioritize most recent and impactful experiences.",
+      "Omit older/less relevant content if needed to fit {{PAGES}} pages.",
+      "Stay factual."
+    ],
+    "templates": {
+      "fullRebuild": [
+        "Create dense {{PAGES}}-page {{CV_TYPE}}.",
+        "from career data:```markdown\n{{CAREER_DATA}}\n```.",
+        "Page layout: {{SHARED_PAGE_LAYOUT}}",
+        "Constraints: {{SHARED_CONSTRAINTS}}",
+        "{{TYPE_SPECIFIC_INSTRUCTIONS}}.",
+        "Output: {{SHARED_OUTPUT}}"
+      ],
+      "incremental": [
+        "Update {{CV_TYPE}}.",
+        "Current: ```latex\n{{CURRENT_CV}}\n```.",
+        "Changes: ```diff\n{{DIFF_DATA}}\n```.",
+        "Page layout: {{SHARED_PAGE_LAYOUT}}",
+        "Constraints: {{SHARED_CONSTRAINTS}}",
+        "{{TYPE_SPECIFIC_INSTRUCTIONS}}.",
+        "Output: {{SHARED_OUTPUT}}"
+      ]
+    }
+  },
+  "antiCv": {
+    "cvType": "Anti-CV: Humorous failures/lessons, self-deprecating but professional.",
+    "fullRebuildInstructions": "Transform achievements → failures.",
+    "incrementalInstructions": "Add failures in humor style. Keep {{PAGES}} pages."
+  },
+  "professionalCv": {
+    "cvType": "Professional CV: quantified impact, leadership, business value.",
+    "fullRebuildInstructions": "Tech → business impact. Quantify results.",
+    "incrementalInstructions": "Maintain professional tone. Keep {{PAGES}} pages."
+  }
+}

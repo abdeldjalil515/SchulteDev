@@ -1,0 +1,100 @@
+name: Release CVs
+
+on:
+  push:
+    branches: [ 'main' ]
+    paths:
+      - '.github/workflows/release-cvs.yml'
+      - 'curriculum_vitae/*-cv.tex'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  compile-cvs:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        cv_type: [ anti, professional ]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compile CV LaTeX to PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: ${{ github.workspace }}/curriculum_vitae/markus-schulte-dev-${{ matrix.cv_type }}-cv.tex
+          args: -lualatex -file-line-error -halt-on-error -interaction=nonstopmode
+
+      - name: Upload CV PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.cv_type }}-cv-pdf
+          path: markus-schulte-dev-${{ matrix.cv_type }}-cv.pdf
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cv-build-logs-${{ matrix.cv_type }}-${{ github.run_id }}
+          path: |
+            *.log
+            markus-schulte-dev-${{ matrix.cv_type }}-cv.pdf
+          retention-days: 7
+
+  create-release:
+    needs: compile-cvs
+    if: contains(needs.compile-cvs.result, 'success')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download Anti-CV PDF
+        uses: actions/download-artifact@v4
+        with:
+          name: anti-cv-pdf
+          path: .
+        continue-on-error: true
+
+      - name: Download Professional CV PDF
+        uses: actions/download-artifact@v4
+        with:
+          name: professional-cv-pdf
+          path: .
+        continue-on-error: true
+
+      - name: Delete existing release and tag
+        run: |
+          gh release delete cvs-latest --yes || true
+          git push --delete origin cvs-latest || true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload PDFs to GitHub Releases
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: cvs-latest
+          name: "Latest CVs - Markus Schulte"
+          body: |
+            🤖 Auto-generated CVs (AI Model: Claude 4)
+
+            📄 **Download Links:**
+            - [Professional CV](https://github.com/${{ github.repository }}/releases/latest/download/markus-schulte-dev-professional-cv.pdf) - Traditional format highlighting achievements
+            - [Anti-CV (Humorous)](https://github.com/${{ github.repository }}/releases/latest/download/markus-schulte-dev-anti-cv.pdf) - Showcasing failures and lessons learned
+          files: |
+            markus-schulte-dev-anti-cv.pdf
+            markus-schulte-dev-professional-cv.pdf
+          prerelease: false
+          make_latest: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload release artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cv-release-artifacts-${{ github.run_id }}
+          path: markus-schulte-dev-*.pdf
+          retention-days: 7

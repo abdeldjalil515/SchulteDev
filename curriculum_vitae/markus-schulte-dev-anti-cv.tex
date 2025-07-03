@@ -1,0 +1,262 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+\setmainfont{Latin Modern Roman}
+\setsansfont{Latin Modern Sans}
+
+\definecolor{failred}{RGB}{180,40,40}
+\definecolor{lessonblue}{RGB}{40,80,140}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=failred,
+    urlcolor=lessonblue,
+    citecolor=lessonblue
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\scriptsize\color{failred}Anti-CV: Learning from Professional Disasters}
+\fancyhead[R]{\scriptsize\color{lessonblue}Markus Schulte}
+\fancyfoot[C]{\scriptsize\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\titleformat{\section}{\large\sffamily\bfseries\color{failred}}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\normalsize\sffamily\bfseries\color{lessonblue}}{}{0em}{}
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+\titlespacing*{\subsection}{0pt}{8pt}{4pt}
+
+\setlist[itemize]{leftmargin=*,itemsep=0pt,parsep=0pt,topsep=4pt}
+
+\begin{document}
+
+\begin{center}
+{\Huge\sffamily\bfseries\color{failred}ANTI-CV}\\[4pt]
+{\Large\sffamily\color{lessonblue}A Professional Journey Through Spectacular Failures}\\[8pt]
+{\large\sffamily Markus Schulte}\\[2pt]
+{\normalsize Freelance Cloud Architect \& Recovering Perfectionist}\\[2pt]
+{\small\href{mailto:mail@schulte-development.de}{mail@schulte-development.de} | +49 178 7217768 | Cologne, Germany}
+\end{center}
+
+\section{Professional Disaster Summary}
+
+\textbf{18+ years of making expensive mistakes} so you don't have to. Specialized in learning the hard way about enterprise architecture, team leadership, and why "it works on my machine" isn't a deployment strategy. Currently helping LBBW avoid the same architectural disasters I've personally experienced.
+
+\textbf{Core Incompetencies Developed Through Failure:}
+\begin{itemize}
+\item \textbf{Overengineering Expert:} Learned to build simple solutions after creating impossibly complex ones first
+\item \textbf{Microservices Skeptic:} Discovered the hard way why they're not always the answer (Sorry, Trusted Shops)
+\item \textbf{Management Survivor:} Promoted to Head of Development without leadership training—learned empathy through failure
+\item \textbf{Technology Hype Victim:} Chose Sphinx over ElasticSearch because "ElasticSearch seemed too exotic"
+\item \textbf{Kubernetes Critic:} Still believe it's overcomplicated after years of wrestling with it
+\end{itemize}
+
+\textbf{Greatest Hits of Professional Humility:}
+\begin{itemize}
+\item Built a 1000+ test suite that initially took 45 minutes to run
+\item Managed a team of 7 developers while learning management on the job
+\item Spent 3 years as sole developer on middleware that processed 10M records (because I said "sure, I can handle that")
+\item Convinced a bank to let me modernize their IT architecture (they're still recovering)
+\end{itemize}
+
+\vspace{10pt}
+\begin{tabularx}{\textwidth}{|X|X|X|X|}
+\hline
+\textbf{Disaster Categories} & \textbf{Learning Methodology} & \textbf{Recovery Time} & \textbf{Wisdom Gained} \\
+\hline
+Architecture Overengineering & Trial by Fire & 6-18 months & Simplicity is genius \\
+\hline
+Team Leadership Fumbles & 360° Feedback Reality Checks & 2-3 years & Humans aren't APIs \\
+\hline
+Technology Hype Adoption & Production Failure Education & 3-12 months & Boring tech wins \\
+\hline
+Performance Optimization & Late-night Debugging Sessions & 1-6 months & Profile first, optimize later \\
+\hline
+Scope Creep Management & Client Relationship Disasters & Ongoing & "No" is a complete sentence \\
+\hline
+\end{tabularx}
+
+\section{Recent Learning Experiences (2021-2024)}
+
+\subsection{LBBW: Banking on Disaster (Nov 2024—Present)}
+
+\textbf{Current Challenge:} Helping Germany's major state bank modernize IT architecture after volunteering to assess "hundreds of legacy applications." Turns out saying "I can evaluate your entire application portfolio" was optimistic.
+
+\textbf{Learning Opportunities:}
+\begin{itemize}
+\item \textbf{Scope Estimation Failure:} Confidently assessed migration complexity, then discovered applications built in technologies I'd never heard of
+\item \textbf{Enterprise Reality Check:} My "simple" architectural solutions meet banking compliance requirements approximately like a bicycle meets Formula 1 regulations
+\item \textbf{Platform Evangelism:} Enthusiastically promoted Azure migration to teams already traumatized by previous "cloud transformations"
+\item \textbf{Template Obsession:} Created beautiful Solution Design Templates that work perfectly in theory
+\end{itemize}
+
+\subsection{Union Investment: The Great SCS Experiment (Oct 2021—Dec 2024)}
+
+\textbf{3-year transformation of a "simple" B2B platform} that somehow required event-driven architecture, microfrontends, and enough documentation to deforest a small country.
+
+\textbf{Spectacular Learning Moments:}
+\begin{itemize}
+\item \textbf{Architectural Overengineering:} Turned a straightforward portal into 8 Self-contained Systems because "domain boundaries"
+\item \textbf{Framework Addiction:} Built a custom microfrontend toolkit when buying an existing solution was clearly the sensible option
+\item \textbf{Testing Perfectionism:} Achieved 1000+ tests that initially took 45 minutes to run—learned about parallel execution through exhaustion
+\item \textbf{Technology Evangelism:} Convinced team to adopt Web Components standard that 3 people worldwide actually understood
+\item \textbf{Search Complexity:} Designed event-driven search across 8 domains when a simple database query might have sufficed
+\item \textbf{360° Feedback Humility:} Learned that "explaining things too technically" means "nobody understands what you're talking about"
+\end{itemize}
+
+\textbf{Redemption Arc:} Eventually delivered working platform with 99.9\% uptime, but not before questioning every architectural decision at 3 AM.
+
+\subsection{Saloodo!/DHL: Solo Middleware Madness (Dec 2021—Nov 2024)}
+
+\textbf{Accepted part-time role} synchronizing 10 million records between systems because "how hard could it be?"
+
+\textbf{Isolation Learning:}
+\begin{itemize}
+\item \textbf{Architecture Decisions in Vacuum:} Made every decision alone, including some spectacularly wrong ones
+\item \textbf{Database Schema Horror:} Discovered that real-world data doesn't follow logical patterns—or any patterns
+\item \textbf{Scale Assumption Failure:} Built solution for "some records" that turned out to be 10 million records
+\item \textbf{Golang Overconfidence:} Chose Golang for first production use because "how different can it be from Java?"
+\end{itemize}
+
+\textbf{Accidental Success:} Achieved 100\% uptime through over-engineering fault tolerance.
+
+\subsection{Trusted Shops: Microservices Reality Check (Aug 2018—Oct 2019)}
+
+\textbf{First encounter with real microservices architecture}—learned why they're not always the panacea consultants promise.
+
+\textbf{Disillusionment Journey:}
+\begin{itemize}
+\item \textbf{Microservices Mythology:} Discovered that simple changes require modifying 6 different services owned by 4 different teams
+\item \textbf{Service Mesh Complexity:} Realized that network calls are not method calls, especially when they fail
+\item \textbf{Distributed Testing Nightmare:} Learned that integration testing across microservices makes unit testing look trivial
+\item \textbf{DevOps Learning Curve:} Became reluctant Kubernetes expert while secretly longing for simpler deployment options
+\end{itemize}
+
+\textbf{Valuable Skepticism Developed:} Now approach microservices recommendations with healthy suspicion.
+
+\section{Earlier Educational Disasters (2007-2021)}
+
+\subsection{werkenntwen: Management Learning Laboratory (2007-2014)}
+
+\textbf{Promoted to Head of Development} at Germany's social network without management training—learned leadership through spectacular failures.
+
+\textbf{Leadership Disasters:}
+\begin{itemize}
+\item \textbf{Technical Manager Fallacy:} Assumed coding skills would automatically translate to people management
+\item \textbf{Authority Confusion:} Oscillated between micromanagement and complete hands-off approaches
+\item \textbf{Technology Decision Trauma:} Chose Sphinx over ElasticSearch because "ElasticSearch seemed too exotic"—platform later migrated to ElasticSearch, validating that I should have been more adventurous
+\item \textbf{Scaling Incompetence:} Learned vertical/horizontal partitioning through production database disasters
+\item \textbf{Team Building Naivety:} Discovered that hiring "smart people" doesn't automatically create effective teams
+\end{itemize}
+
+\textbf{Character Development:} Evolved from technical dictator to collaborative leader through necessity and humility.
+
+\subsection{Early Freelancing: Consultant Credibility Crisis (2014-2017)}
+
+\textbf{Transition from employee to consultant} revealed gaps between confidence and competence.
+
+\textbf{Learning Opportunities:}
+\begin{itemize}
+\item \textbf{Docker Complexity Shock:} First encounter with Kubernetes convinced me it was overcomplicated (still maintain this position)
+\item \textbf{Contract Testing Evangelism:} Became Pact framework advocate after experiencing integration hell
+\item \textbf{CI/CD Religious Conversion:} Learned DevOps importance through deployment disasters
+\item \textbf{Client Expectation Management:} Discovered that "it should be simple" and "it is simple" are different statements
+\end{itemize}
+
+\subsection{Atlassian Marketplace: Product Owner Illusions (2016-2023)}
+
+\textbf{Built commercial add-ons} for Bamboo CI/CD—learned product management through customer complaints.
+
+\textbf{Business Reality Education:}
+\begin{itemize}
+\item \textbf{Market Size Misjudgment:} Built products for declining platform (Bamboo Server) while world moved to cloud
+\item \textbf{Feature Creep Addiction:} Added complexity instead of solving core problems elegantly
+\item \textbf{Customer Communication Avoidance:} Learned importance of customer feedback by initially ignoring it
+\item \textbf{Technical Debt Accumulation:} Maintained Java codebase across multiple Atlassian API changes
+\end{itemize}
+
+\textbf{Sustainable Revenue Achievement:} Despite mistakes, maintained 83 customers across 15 countries for 7 years.
+
+\section{Personal Projects: Hobby Disasters}
+
+\subsection{Crypto-Arbitrage Trading Bot (2015)}
+\textbf{Built automated Bitcoin trading system} during spare time—learned about market efficiency through losses.
+
+\textbf{Algorithmic Trading Education:} Discovered that market inefficiencies disappear faster than development cycles.
+
+\subsection{Jenkins-GitHub Integration PoC (2018)}
+\textbf{Multi-tenant Jenkins automation} using Google Cloud and Firebase—learned about infrastructure complexity.
+
+\textbf{Scope Creep Mastery:} Turned simple webhook into distributed system spanning 4 technologies.
+
+\section{Educational Struggles \& Career Interruptions}
+
+\subsection{University of Koblenz-Landau: Extended Learning Program (2004-2012)}
+
+\textbf{Computer Science Diploma} that took 8 years instead of 5—learned time management through necessity.
+
+\textbf{Academic Challenges:}
+\begin{itemize}
+\item \textbf{Work-Study Balance Disaster:} Attempted full-time work while completing degree
+\item \textbf{Perfectionism Paralysis:} Spent excessive time on assignments seeking perfection over completion
+\item \textbf{Time Management Illusion:} Consistently underestimated project completion times
+\end{itemize}
+
+\textbf{Final Grade:} Magna Cum Laude (possibly due to examiner sympathy for extended effort).
+
+\subsection{Professional Development Gaps}
+
+\textbf{Skills Learned the Hard Way:}
+\begin{itemize}
+\item \textbf{Project Management:} Through scope creep disasters
+\item \textbf{Client Communication:} Through misaligned expectations
+\item \textbf{Team Leadership:} Through management failures
+\item \textbf{Technology Selection:} Through production failures
+\item \textbf{Architecture Design:} Through overengineering episodes
+\end{itemize}
+
+\subsection{Strategic Career Breaks}
+
+\textbf{Parental Leave (Apr 2020—Sep 2021):} Combined COVID-19 project scarcity with family time—learned that forced breaks can be beneficial.
+
+\textbf{Travel Break (Aug—Dec 2015):} Extended exploration period—learned that stepping away from code occasionally provides perspective.
+
+\textbf{Military Service (2003-2004):} Mandatory German military service—learned that software development is preferable to early morning exercises.
+
+\section{Technical Skill Deficiencies \& Learning Methodology}
+
+\textbf{Programming Languages:} Java (18y of making elegant mistakes), Golang (4y of fighting the compiler), PHP (8y of security vulnerabilities), TypeScript (adequate for frontend integration failures)
+
+\textbf{Architecture Patterns:} Expert in overengineering microservices, Self-contained Systems, and event-driven architectures that could have been simple REST APIs
+
+\textbf{Cloud Platforms:} AWS (7y of expensive experiments), Azure (4y of vendor lock-in), GCP (sufficient for comparison disappointments)
+
+\textbf{Leadership Experience:} Team management through trial and error, agile coaching through ceremony confusion, stakeholder management through communication disasters
+
+\section{Current Status \& Future Failure Opportunities}
+
+\textbf{Professional Motto:} "Failing forward since 2007"
+
+\textbf{Available for:} Architecture consulting (with realistic timelines), team leadership (with management training), and technical mentoring (with humility)
+
+\textbf{Expertise Disclaimer:} All skills developed through practical failure experience. Success not guaranteed, but learning opportunities abundant.
+
+\vspace{12pt}
+\begin{center}
+\textbf{\color{failred}References available upon request}\\
+\textbf{\color{lessonblue}(Most will confirm that mistakes were made, lessons were learned)}
+\end{center}
+
+\vspace{6pt}
+{\scriptsize\color{gray}\textit{This Anti-CV was generated using AI assistance to transform achievements into learning experiences. All failures are genuine and personally experienced. Professional competence has been developed through systematic error correction and continuous learning from mistakes.}}
+
+\end{document}

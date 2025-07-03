@@ -1,0 +1,40 @@
+- title: LBBW
+  description: Cloud Architect, established assessment framework for large-scale enterprise migration and enhanced Azure platform readiness.
+  img: lbbw.svg
+  url: /companies/lbbw
+- title: Union Investment
+  description: Cloud Architect, reduced deployment time from days to minutes, achieved 99.9% uptime, and established corporate architecture templates.
+  img: ui.svg
+  url: /companies/union-investment
+- title: Saloodo!
+  description: Middleware Engineer, achieved 100% production uptime for business-critical data synchronization with Salesforce.
+  img: saloodo.svg
+  url: /companies/saloodo
+- title: Atlassian Bamboo Add-ons
+  description: Creator of commercial add-ons, built a sustainable 7-year business with global reach and recurring revenue.
+  img: bamboo.png
+  url: /companies/atlassian-bamboo-add-ons
+- title: Sedo GmbH
+  description: Cloud Consultant, reduced infrastructure overhead by 60% through service consolidation and trained 12 developers in contract testing.
+  img: sedo.png
+  url: /companies/sedo-gmbh
+- title: Trusted Shops
+  description: Cloud Consultant, modernized legacy systems, achieved scalability with AWS microservices, and enhanced quality with contract testing.
+  img: trusted-shops.svg
+  url: /companies/trusted-shops
+- title: Allianz Global Digital Factory
+  description: Senior JavaEE Developer, successfully deployed 3 applications to CloudFoundry and created company-standard API documentation.
+  img: allianz.svg
+  url: /companies/allianz-global-digital-factory
+- title: toom Baumarkt GmbH
+  description: Senior Engineer & DevOp, delivered 5 production microservices, reduced deployment time from days to hours, and improved software quality.
+  img: toom.svg
+  url: /companies/toom-baumarkt
+- title: Early Freelancing Projects
+  description: Implemented automated CI/CD pipelines for 6+ companies and led cloud transition projects reducing infrastructure costs by 40%.
+  img: rocket-ship-svgrepo-com.svg
+  url: /companies/early-freelancing-projects
+- title: werkenntwen
+  description: PHP Developer & Head of Development, scaled platform for 9+ million users, managed development team, and reduced page load times by 60%.
+  img: wkw.png
+  url: /companies/werkenntwen

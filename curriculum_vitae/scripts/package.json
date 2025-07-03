@@ -1,0 +1,58 @@
+{
+  "name": "schultedev",
+  "version": "0.0.1",
+  "description": "AI-powered Markus Schulte Dev CV generation and transformation scripts",
+  "type": "module",
+  "scripts": {
+    "test": "npm run cv:test",
+    "clean": "rm -rf node_modules/ tmp/",
+    "cv:update": "tsx run-cv-update.ts",
+    "cv:update:professional": "CV_TYPES=professional tsx run-cv-update.ts",
+    "cv:update:anti": "CV_TYPES=anti tsx run-cv-update.ts",
+    "cv:full-rebuild": "tsx transform-full-rebuild.ts",
+    "cv:incremental": "tsx transform-incremental.ts",
+    "cv:test": "tsx test-local.ts",
+    "cv:test:full": "tsx test-local.ts full_rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SchulteDev/SchulteDev.git"
+  },
+  "keywords": [
+    "cv",
+    "resume",
+    "ai",
+    "claude",
+    "automation",
+    "cloud-architect",
+    "devops"
+  ],
+  "author": {
+    "name": "Markus Schulte",
+    "email": "mail@schulte-development.de"
+  },
+  "license": "EUPL-1.2",
+  "bugs": {
+    "url": "https://github.com/SchulteDev/SchulteDev/issues"
+  },
+  "homepage": "https://github.com/SchulteDev/SchulteDev",
+  "dependencies": {
+    "@actions/core": "1.11.1",
+    "@anthropic-ai/sdk": "0.55.1",
+    "axios": "1.10.0",
+    "consola": "3.4.2",
+    "dotenv": "17.0.1",
+    "fs-extra": "11.3.0",
+    "simple-git": "3.28.0",
+    "zod": "3.25.71"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "11.0.4",
+    "@types/node": "22.16.0",
+    "tsx": "4.20.3"
+  },
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=10.0.0"
+  }
+}

@@ -1,0 +1,20 @@
+- title: Technical cloud architect
+  img: technical-cloud-architect.jpeg
+  description: >
+    As a technical cloud architect, I design and implement scalable IT systems, specializing in cloud-native solutions across AWS, Azure, and GCP. I guide teams in realizing robust, future-proof architectures.
+  skills: Cloud, design, AWS, Azure, GCP, Kubernetes, Microservices
+- title: Leadership
+  img: leadership.jpeg
+  description: >
+    I lead and mentor cross-functional teams (5-9 developers) to achieve strategic goals, focusing on effective stakeholder management and fostering a collaborative, high-performing environment.
+  skills: Strategic thinking, Communication, Decision-making, Mentorship, Stakeholder management, Agile Coaching, Team Building
+- title: Programming
+  img: programming.jpeg
+  description: >
+    With 18+ years of experience, I am a seasoned engineer proficient in Java and Golang, with strong skills in TypeScript. I focus on clean code, robust backend systems, and efficient build processes.
+  skills: Clean code, Java, Golang, Git, Build tools, TypeScript, Microservices, Event-driven
+- title: DevOp
+  img: devop.jpeg
+  description: >
+    I excel in designing, implementing, and operating software, with deep expertise in continuous integration/delivery (CI/CD), Infrastructure-as-Code (Terraform), and comprehensive monitoring strategies.
+  skills: DevOps, CI/CD, Monitoring, Infrastructure-as-Code, Docker, Kubernetes, Automation

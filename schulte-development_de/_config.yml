@@ -1,0 +1,25 @@
+title: Schulte development
+author: Markus Schulte
+email: mail@schulte-development.de
+avatar: assets/img/markus-schulte.jpg
+url: https://schulte-development.de
+keywords: "Azure,AWS,technical architect,leader,Java,Golang"
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+remote_theme: daattali/beautiful-jekyll
+navbar-links:
+  About Me: "/#about-me"
+  Skills: "/#my-skillset"
+  Career: "/#my-career"
+  Services: "/#my-services"
+  Contributions: "/#my-contributions"
+  Connect: "/#lets-connect"
+  Imprint: imprint
+social-network-links:
+  email: mail@schulte-development.de
+  linkedin: markus-schulte
+  github: SchulteDev
+  stackoverflow: markus-schulte
+

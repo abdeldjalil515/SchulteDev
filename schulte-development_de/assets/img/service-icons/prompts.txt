@@ -1,0 +1,17 @@
+https://www.bing.com/images/create
+
+"Create a black and white icon."
+
+- technical-cloud-architect-icon.jpeg
+It shall illustrate a technical cloud architect
+
+- programming.jpg
+It should represent programming
+
+- devop.jpg
+It should represent Devops engineering. Try to highlight the shipping aspect of DevOp.
+Include containers and pipelines.
+
+- leadership.jpg
+It should represent leadership in terms of agile software development.
+It has to show a leader and a team. Team members including the lead are wearing t-shirts

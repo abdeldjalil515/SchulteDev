@@ -1,0 +1,16 @@
+services:
+  jekyll:
+    build: .
+    ports:
+      - "4000:4000"
+      - "35729:35729" # live reload port
+    volumes:
+      - .:/app
+      - /app/vendor/bundle  # exclude vendor directory from sync
+      - gem_cache:/usr/local/bundle
+    environment:
+      - JEKYLL_ENV=development
+    stdin_open: true
+    tty: true
+volumes:
+  gem_cache:

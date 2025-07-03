@@ -11,7 +11,7 @@
       "P4: Education, skills, career breaks; footer: AI disclaimer."
     ],
     "constraints": [
-      "Valid LuaLaTeX with standard packages only.",
+      "Valid, compilable LuaLaTeX with standard packages only.",
       "Bundled fonts only. Only characters available in the font(s).",
       "Exactly {{PAGES}} filled pages.",
       "Prioritize most recent and impactful experiences.",

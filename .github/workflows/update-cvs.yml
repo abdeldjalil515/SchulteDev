@@ -34,9 +34,13 @@ jobs:
   changes:
     runs-on: ubuntu-latest
     outputs:
-      cv: ${{ steps.filter.outputs.cv || (github.event_name == 'workflow_dispatch' && 'true') }}
+      cv: ${{ steps.manual.outputs.result || steps.filter.outputs.cv }}
     steps:
       - uses: actions/checkout@v4
+      - name: Set manual trigger
+        id: manual
+        if: github.event_name == 'workflow_dispatch'
+        run: echo "result=true" >> $GITHUB_OUTPUT
       - uses: dorny/paths-filter@v3
         id: filter
         if: github.event_name != 'workflow_dispatch'

@@ -1,276 +1,289 @@
 \documentclass[10pt,a4paper]{article}
-\usepackage[left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
+\usepackage[margin=0.5in]{geometry}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{xcolor}
-\usepackage{fontspec}
 \usepackage{hyperref}
 \usepackage{multicol}
 \usepackage{tabularx}
 
-\setmainfont{Latin Modern Roman}
-\setsansfont{Latin Modern Sans}
-\setmonofont{Latin Modern Mono}
-
-\definecolor{darkblue}{RGB}{0,50,100}
-\definecolor{gray}{RGB}{100,100,100}
-
-\titleformat{\section}{\Large\bfseries\sffamily\color{darkblue}}{}{0em}{}[\titlerule]
-\titleformat{\subsection}{\large\bfseries\sffamily\color{darkblue}}{}{0em}{}
-\titleformat{\subsubsection}{\normalsize\bfseries\sffamily\color{darkblue}}{}{0em}{}
-
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{3pt}
+\setlength{\parskip}{2pt}
+\setlength{\columnsep}{15pt}
+
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+\titlespacing*{\subsection}{0pt}{6pt}{2pt}
 
 \hypersetup{
     colorlinks=true,
-    linkcolor=darkblue,
-    urlcolor=darkblue,
-    citecolor=darkblue
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue
 }
 
 \begin{document}
 
 \begin{center}
-{\Huge\bfseries\sffamily\color{darkblue} MARKUS SCHULTE}\\[5pt]
-{\Large\sffamily Anti-CV: A Professional Guide to Spectacular Learning Experiences}\\[8pt]
-{\large\sffamily Freelance Cloud Architect \& Professional Mistake Maker}\\[5pt]
-\textcolor{gray}{Cologne, Germany | \href{mailto:mail@schulte-development.de}{mail@schulte-development.de} | +49 178 7217768}\\
-\textcolor{gray}{\href{https://schulte-development.de}{schulte-development.de} | \href{https://github.com/SchulteDev}{GitHub} | \href{https://linkedin.com/in/markus-schulte}{LinkedIn}}
+{\LARGE \textbf{Markus Schulte}}\\
+\vspace{2pt}
+{\large \textbf{Anti-CV: Professional Disasters \& Lessons Learned}}\\
+\vspace{4pt}
+\textbf{Cloud Architect \& Software Engineer}\\
+Cologne, Germany\\
+\href{mailto:mail@schulte-development.de}{mail@schulte-development.de} | +49 178 7217768\\
+\href{https://schulte-development.de}{schulte-development.de} | \href{https://github.com/SchulteDev}{GitHub} | \href{https://linkedin.com/in/markus-schulte}{LinkedIn}
 \end{center}
 
-\section{Professional Summary of Magnificent Failures}
+\vspace{6pt}
 
-\textbf{Cloud Architect \& Software Engineer} with 18+ years experience in creative problem-solving, over-engineering solutions, and discovering what doesn't work. Specialized in building complex systems that teach valuable lessons about simplicity.
+\section{Professional Disasters Summary}
 
-\textbf{Core Competencies in Failure:}
-• \textbf{Over-Architecture:} Expert in creating microfrontend frameworks when a simple webpage would suffice
-• \textbf{Technology Skepticism:} Professional pessimist regarding Kubernetes, microservices, and other "silver bullets"
-• \textbf{Leadership Learning:} Mastered the art of accepting management roles without management experience
-• \textbf{Tool Proliferation:} Skilled in introducing 47 different tools to solve problems that could be solved with 3
+\textbf{18+ years of surviving software development} through spectacular failures, questionable decisions, and accidentally successful projects. Specialized in turning simple requirements into complex architectures, over-engineering solutions, and learning the hard way that "it works on my machine" isn't a deployment strategy.
 
-\textbf{Greatest Achievements in Learning:}
-• Successfully convinced Union Investment to let me build a microfrontend framework for 80,000 users
-• Took 7+ years to complete a university degree that should take 5 years
-• Discovered that microservices create more problems than they solve (the hard way)
-• Built middleware that nobody asked for but everyone needed
+\textbf{Core Anti-Expertise:}
+\begin{itemize}[leftmargin=10pt,itemsep=1pt]
+\item \textbf{Architecture Overkill:} Consistently chose complex solutions when simple ones existed
+\item \textbf{Technology Addiction:} Collected bleeding-edge frameworks like Pokemon cards
+\item \textbf{Microservices Skeptic:} Learned that distributed systems distribute problems too
+\item \textbf{Leadership Learning:} Discovered management is about humans, not just code
+\item \textbf{Perfectionism Recovery:} Slowly learning that "good enough" is actually good enough
+\end{itemize}
 
-\begin{center}
-\begin{tabularx}{\textwidth}{|X|X|X|X|}
-\hline
-\textbf{Failure Category} & \textbf{Years of Experience} & \textbf{Lessons Learned} & \textbf{Recovery Rate} \\
-\hline
-Over-Engineering & 18+ & Simplicity is harder than complexity & 95\% \\
-\hline
-Technology Hype & 11+ & Not every trend is worth following & 90\% \\
-\hline
-Architecture Complexity & 8+ & KISS principle exists for a reason & 85\% \\
-\hline
-Team Leadership & 6+ & People skills matter more than code & 80\% \\
-\hline
-\end{tabularx}
-\end{center}
+\textbf{Key Disasters That Somehow Worked:}
+\begin{itemize}[leftmargin=10pt,itemsep=1pt]
+\item Built platforms serving 9M+ users despite choosing every wrong technology first
+\item Reduced deployment times from days to minutes after initially making them take weeks
+\item Achieved 99.9\% uptime only after experiencing spectacular downtimes
+\item Led teams of 5-9 developers after learning leadership isn't about being the smartest person in the room
+\end{itemize}
 
-\section{Recent Professional Learning Experiences}
+\textbf{My Realistic Slogan:} "Eventually crafting solutions that work despite my best efforts to overcomplicate them"
+
+\section{Recent Professional Failures}
 
 \subsection{November 2024 — Present: Cloud Architect at LBBW}
-\textit{Currently attempting to modernize a major German bank's IT infrastructure}
+\textbf{Project:} "Phoenix" IT Modernization for Germany's Major State Bank
 
-\textbf{Current Challenges:}
-• Working with a platform called "Skywalker" that's not yet in production (what could go wrong?)
-• Responsible for 10 of 30 applications in a transformation project with 80 people (no pressure)
-• Trying to convince banking IT that cloud migration is worth the risk
-• Learning that enterprise banking moves at the speed of continental drift
+\textbf{The Challenge:} Hundreds of legacy applications need Azure migration assessment. Sounds simple, right?
 
-\textbf{Key Learning Experiences:}
-• Discovering that "production-ready" doesn't mean "production-used"
-• Finding out that R-methodology assessments can reveal uncomfortable truths about legacy systems
-• Realizing that Azure Calculator estimates and reality have a complex relationship
-• Understanding that "Phoenix" transformations sometimes involve more ashes than rising
+\textbf{My Contribution to Chaos:}
+\begin{itemize}[leftmargin=10pt,itemsep=1pt]
+\item \textbf{Platform Evaluation Overkill:} Spent weeks evaluating Elastisys Welkin when the existing Azure solution was probably fine
+\item \textbf{Architecture Analysis Paralysis:} Created detailed migration assessments for applications that might never migrate
+\item \textbf{Template Obsession:} Built "comprehensive frameworks" when simple checklists would have sufficed
+\item \textbf{Banking Compliance Reality Check:} Discovered that "move fast and break things" doesn't apply to financial institutions
+\end{itemize}
+
+\textbf{Lessons Learned:}
+\begin{itemize}[leftmargin=10pt,itemsep=1pt]
+\item Enterprise architecture is 20\% technology, 80\% politics and process
+\item "Cloud-native" doesn't mean "ignore regulations"
+\item Sometimes the best architecture decision is accepting the status quo
+\item Banking IT moves at the speed of compliance, not innovation
+\end{itemize}
 
 \subsection{October 2021 — December 2024: Cloud Architect at Union Investment}
-\textit{Three years of magnificent over-engineering for 80,000 users}
+\textbf{Project:} B2B Platform Modernization (3+ years of "learning experiences")
 
-\textbf{The Grand Vision:} Transform a simple B2B platform into a distributed masterpiece using Self-contained Systems, microfrontends, and event-driven architecture.
+\textbf{The Grand Plan:} Transform legacy Liferay monolith into modern Self-contained Systems architecture. What could go wrong?
 
-\textbf{Notable Achievements in Complexity:}
-• Built a microfrontend framework called "microfrontend-toolkit" because clearly the world needed another one
-• Convinced management that 8 domain boundaries were necessary for what was essentially a product catalog
-• Created an event-driven search system using Azure Event Hubs and Algolia when a database query might have sufficed
-• Achieved 1000+ tests with 10-minute build times (because waiting builds character)
-• Introduced so many tools that the onboarding process became a multi-week journey
+\textbf{My Spectacular Overengineering:}
+\begin{itemize}[leftmargin=10pt,itemsep=1pt]
+\item \textbf{Microfrontend Madness:} Built custom toolkit when existing solutions existed. Spent 6 months on framework that could have been solved with iframes
+\item \textbf{Event-Driven Everything:} Designed event streams for search across 8 domains. Turns out, sometimes a REST API is simpler
+\item \textbf{Technology Collecting:} Azure Static Web Apps, Functions, Event Hubs, Web Components, Nx, Lerna, pnpm - collected technologies like infinity stones
+\item \textbf{Testing Obsession:} 1000+ tests with 10-minute build times. Proud of parallelization that solved a problem I created
+\item \textbf{Architecture Perfectionism:} Spent months on "proper" SCS boundaries when business just wanted working software
+\end{itemize}
+
+\textbf{360° Feedback Reality Check:}
+\begin{itemize}[leftmargin=10pt,itemsep=1pt]
+\item \textbf{Communication Gap:} "Consider pace of technical explanations for less technical stakeholders" - apparently, not everyone wants to hear about event sourcing patterns
+\item \textbf{Complexity Addiction:} Team feedback: "Sometimes explanations are too detailed" - guilty of loving my own voice
+\item \textbf{Technical Perfectionism:} "Stands up for the right things" - sometimes the right thing is shipping imperfect code
+\end{itemize}
+
+\textbf{Accidental Successes:}
+\begin{itemize}[leftmargin=10pt,itemsep=1pt]
+\item Despite overengineering, achieved 99.9\% uptime and 30-minute deployments
+\item Custom microfrontend toolkit actually worked and was adopted company-wide
+\item Search solution performed well, even if architecture was unnecessarily complex
+\item Team eventually appreciated the technical depth, even if initial explanations were overwhelming
+\end{itemize}
+
+\subsection{December 2021 — November 2024: Middleware Engineer at Saloodo!}
+\textbf{Challenge:} Sync 10M records between Saloodo and Salesforce. Simple data transfer, right?
+
+\textbf{My Golang Adventure:}
+\begin{itemize}[leftmargin=10pt,itemsep=1pt]
+\item \textbf{Language Learning in Production:} Chose this project to learn Golang professionally. Testing new languages in production systems - what could go wrong?
+\item \textbf{Solo Development Hubris:} Took on critical middleware as sole developer. No team, no backup, no safety net
+\item \textbf{Database Schema Denial:} Saloodo's schema was "inconsistent" (malformed JSON, wrong types). Spent weeks building robust error handling for fundamentally broken data
+\item \textbf{Perfectionism vs. Reality:} Achieved 70\% test coverage and 5-second test runs. Probably over-tested a simple data sync tool
+\end{itemize}
 
 \textbf{Lessons Learned:}
-• Sometimes a monolith is just a monolith waiting to be over-engineered
-• Event-driven architecture is event-driven complexity
-• Web Components are great, but explaining them to stakeholders is an art form
-• Azure Static Web Apps are fantastic until you need to do anything complex
+\begin{itemize}[leftmargin=10pt,itemsep=1pt]
+\item Learning new languages in production is stressful but effective
+\item Sometimes you have to work with terrible data schemas and smile
+\item Being the only developer is both terrifying and liberating
+\item Golang is great for this kind of work, but Java would have been safer
+\end{itemize}
 
-\textbf{The Reality Check:} Despite all the complexity, the platform actually works well and serves as a corporate template. Sometimes over-engineering accidentally creates good architecture.
+\section{Historical Failures \& Learning Experiences}
 
-\subsection{December 2021 — November 2024: Middleware Engineer at Saloodo! (DHL)}
-\textit{Solo mission: Sync 10 million records while learning Golang}
+\subsection{2018-2020: AWS \& Microservices Reality Check}
 
-\textbf{The Challenge:} Build middleware nobody asked for but everyone needed, using a language I'd never used professionally.
+\textbf{Trusted Shops (2018-2019):} First encounter with "real" microservices architecture
 
-\textbf{Creative Solutions:}
-• Chose this part-time project specifically to learn Golang in production (learning by fire)
-• Built a system that runs in endless loops because apparently that's how you do middleware
-• Achieved 100\% uptime through sheer stubbornness and comprehensive testing
-• Discovered that Saloodo's database contains creative interpretations of data types
-• Implemented retry logic that would make a cardiac patient jealous
+\textbf{My Naive Expectations:}
+\begin{itemize}[leftmargin=10pt,itemsep=1pt]
+\item \textbf{Microservices Hype Victim:} Believed the conference talks about independent deployments and team autonomy
+\item \textbf{Complexity Shock:} Simple changes required modifications across 5+ services
+\item \textbf{Testing Nightmare:} Integration testing became a distributed systems problem
+\item \textbf{Monitoring Overload:} Went from monitoring 1 application to monitoring 15+ services
+\end{itemize}
+
+\textbf{Reality Check:}
+\begin{itemize}[leftmargin=10pt,itemsep=1pt]
+\item Microservices distribute problems, not just processing
+\item Conway's Law is real - your architecture reflects your org chart
+\item The network is not reliable, and neither are your assumptions
+\item Sometimes a well-structured monolith is better than poorly designed microservices
+\end{itemize}
+
+\textbf{Toom Baumarkt (2016-2017):} Kubernetes Early Adopter Trauma
+
+\textbf{My Container Enthusiasm:}
+\begin{itemize}[leftmargin=10pt,itemsep=1pt]
+\item \textbf{Kubernetes Complexity:} Chose Kubernetes when Docker Compose would have sufficed
+\item \textbf{Operations Nightmare:} Neither ops team nor dev team understood the complexity
+\item \textbf{YAML Engineering:} Spent more time writing configs than application code
+\item \textbf{Troubleshooting Hell:} "It works locally" became "it works in my cluster"
+\end{itemize}
+
+\textbf{Lesson Learned:} Kubernetes is for platform teams, not application teams
+
+\subsection{2007-2014: Leadership Learning at wer-kennt-wen}
+
+\textbf{The Promotion:} From developer to Head of Development at 23. What could go wrong?
+
+\textbf{My Management Disasters:}
+\begin{itemize}[leftmargin=10pt,itemsep=1pt]
+\item \textbf{Technical Leadership Fallacy:} Assumed being the best developer meant being the best manager
+\item \textbf{Human Factor Blindness:} Focused on technical solutions to people problems
+\item \textbf{Over-Engineering Management:} Created complex processes when simple conversations would have worked
+\item \textbf{Perfectionism Paralysis:} Demanded technical perfection while ignoring team dynamics
+\end{itemize}
+
+\textbf{Technology Decisions That Aged Poorly:}
+\begin{itemize}[leftmargin=10pt,itemsep=1pt]
+\item \textbf{Sphinx vs. ElasticSearch:} Chose familiar over innovative. Platform later migrated to ElasticSearch, proving I should have been braver
+\item \textbf{Conservative Technology Choices:} Consistently chose "safe" options that became technical debt
+\end{itemize}
 
 \textbf{Lessons Learned:}
-• Sometimes the best way to learn a language is to bet someone else's production system on it
-• Postgres inconsistencies are a feature, not a bug
-• 2,776 lines of code can handle 10 million records if you're creative enough
-• Dockertest is your friend when you're the only developer
+\begin{itemize}[leftmargin=10pt,itemsep=1pt]
+\item Leadership is about people, not just technology
+\item Sometimes the "risky" technology choice is actually safer long-term
+\item Management and technical skills are different skill sets
+\item Laissez-faire leadership worked better for my personality and team needs
+\end{itemize}
 
-\subsection{August 2018 — October 2019: Cloud Consultant at Trusted Shops}
-\textit{Where I discovered microservices aren't magic}
+\subsection{2016-2024: Atlassian Marketplace Adventures}
 
-\textbf{The Awakening:} First encounter with real microservices architecture in the wild.
+\textbf{The Business:} Created commercial Bamboo Server add-ons for code quality integration
 
-\textbf{Shocking Discoveries:}
-• Simple changes required modifications across 17 different services
-• Testing was more complex than the actual business logic
-• Deploy ordering became a strategic puzzle game
-• Integration challenges grew exponentially with service count
+\textbf{My Product Development Naivety:}
+\begin{itemize}[leftmargin=10pt,itemsep=1pt]
+\item \textbf{Niche Market Obsession:} Built for Bamboo Server while the world moved to cloud CI/CD
+\item \textbf{Feature Creep:} Added complexity when customers wanted simplicity
+\item \textbf{Documentation Procrastination:} Spent more time coding than explaining
+\item \textbf{Marketing Allergies:} Excellent at building, terrible at selling
+\end{itemize}
 
-\textbf{Technologies Mastered Through Suffering:}
-• AWS Lambda (when you want to make simple things complicated)
-• Terraform (Infrastructure as Code as Confusion)
-• Pact contract testing (teaching services to talk to each other)
-• Salesforce/Zuora integration (because nothing says fun like third-party APIs)
+\textbf{Accidental Success:}
+\begin{itemize}[leftmargin=10pt,itemsep=1pt]
+\item 83 customers across 15+ countries despite minimal marketing
+\item 7-year sustainable business without really trying
+\item First-mover advantage in a niche that actually needed the solution
+\end{itemize}
 
-\textbf{The Revelation:} Became professionally skeptical of microservices as the solution to all problems. Now prefer Self-contained Systems for maintaining sanity.
+\section{Education \& Skill Development Failures}
 
-\section{Earlier Learning Adventures}
+\subsection{Academic Procrastination}
+\textbf{University of Koblenz-Landau (2004-2012):} Diploma in Computer Science
 
-\subsection{October 2016 — September 2017: Senior Engineer at toom Baumarkt}
-\textit{Where I met Kubernetes and immediately became suspicious}
+\textbf{My Time Management Disasters:}
+\begin{itemize}[leftmargin=10pt,itemsep=1pt]
+\item \textbf{Extended Duration:} Took 8 years for a 5-year degree while working full-time
+\item \textbf{Priority Confusion:} Chose immediate income over timely graduation
+\item \textbf{Perfectionism Trap:} Spent too much time on perfect solutions instead of good enough
+\item \textbf{Work-Study Balance:} Learned the hard way that doing both well is nearly impossible
+\end{itemize}
 
-\textbf{First Encounters:}
-• Docker: "This seems useful!"
-• Kubernetes: "This seems unnecessarily complex for running a simple application"
-• Microservices: "Why do we need 5 services to display a product page?"
+\textbf{Unexpected Benefit:} Real-world experience during studies provided practical context for theoretical knowledge
 
-\textbf{Quality Leadership Adventures:}
-• Led quality initiatives across 4 teams (herding cats, but technical cats)
-• Introduced so many testing tools that pull requests became archaeological expeditions
-• Achieved 70\% performance improvement in tests (because faster failures are better failures)
+\subsection{Technology Addiction Timeline}
+\textbf{My Pattern of Collecting Shiny Technologies:}
+\begin{itemize}[leftmargin=10pt,itemsep=1pt]
+\item \textbf{2007-2014:} PHP, MySQL, Apache - The basics (when they were actually enough)
+\item \textbf{2014-2018:} AWS, Docker, Kubernetes - The cloud hype train
+\item \textbf{2018-2021:} Microservices, Event Sourcing, Contract Testing - The architecture astronaut phase
+\item \textbf{2021-2024:} Microfrontends, Web Components, Event Streams - The frontend complexity explosion
+\end{itemize}
 
-\textbf{The Kubernetes Skepticism Origin Story:} Spent weeks learning Kubernetes only to realize it's a tool for operations teams, not application developers. Became lifelong advocate for "use the right tool for the job."
+\textbf{Pattern Recognition:} Consistently chose complex solutions for simple problems
 
-\subsection{August 2007 — June 2014: PHP Developer at werkenntwen}
-\textit{9 million users and two major career lessons}
+\subsection{Career Breaks as Learning Experiences}
 
-\textbf{Lesson 1: Leadership Without Experience (2008-2010)}
-• Accepted Head of Development role based purely on technical skills
-• Discovered that managing code is easier than managing people
-• Learned that "technical competence = leadership ability" is a dangerous equation
-• Evolved from technical dictator to collaborative leader (character development arc)
+\textbf{April 2020 — September 2021: Pandemic Parental Leave}
+\begin{itemize}[leftmargin=10pt,itemsep=1pt]
+\item \textbf{Timing Failure:} Took break during industry slowdown, missing recovery opportunities
+\item \textbf{Skill Atrophy:} Discovered how quickly technical skills fade without practice
+\item \textbf{Market Disconnect:} Returned to find the job market had evolved significantly
+\end{itemize}
 
-\textbf{Lesson 2: Technology Choices Have Consequences}
-• Chose Sphinx over ElasticSearch because it seemed "more reliable"
-• Watched as ElasticSearch became the industry standard
-• Later migrated to ElasticSearch anyway (validation of the road not taken)
-• Learned that conservative technology choices aren't always safe choices
+\textbf{Lessons Learned:} Family time is valuable, but professional re-entry requires strategic planning
 
-\textbf{Scale Learning Experience:}
-• Supported 9+ million users with PHP and MySQL (because we were young and fearless)
-• Implemented creative caching strategies that would make Redis jealous
-• Discovered that social networks are just elaborate systems for moving data around
+\subsection{Current Skill Gaps \& Ongoing Failures}
+\textbf{Technologies I Still Don't Understand:}
+\begin{itemize}[leftmargin=10pt,itemsep=1pt]
+\item \textbf{Machine Learning:} Built crypto trading bot in 2015, still don't understand the math
+\item \textbf{Modern Frontend:} React, Angular, Vue - chose Web Components instead
+\item \textbf{DevOps Tools:} Know enough to be dangerous, not enough to be safe
+\item \textbf{Database Administration:} Can use them, can't optimize them
+\end{itemize}
 
-\subsection{Personal Projects: The Laboratory of Learning}
+\textbf{Soft Skills Development Areas:}
+\begin{itemize}[leftmargin=10pt,itemsep=1pt]
+\item \textbf{Marketing:} Technical excellence doesn't sell itself
+\item \textbf{Business Development:} Great at building, terrible at positioning
+\item \textbf{Communication:} Still explaining technical concepts to non-technical stakeholders
+\item \textbf{Time Management:} Perpetually optimistic about estimates
+\end{itemize}
 
-\textbf{2025: SchulteDev Portfolio Repository}
-• Built an AI-powered CV generator because apparently I needed Claude to write my resume
-• Created a monorepo for professional branding (because one repo wasn't enough)
-• Implemented GitHub Actions that are more complex than the actual content they build
+\section{Conclusion: Lessons from Professional Disasters}
 
-\textbf{2025: AI Document Processing for Tax Software}
-• Built a CLI tool using Azure Document Intelligence for tax documents
-• Discovered that AI document processing is really good at being confidently wrong
-• Learned that Golang is actually quite pleasant for CLI applications
+After 18+ years of making mistakes professionally, I've learned that:
 
-\textbf{2018: Jenkins ↔ GitHub Integration PoC}
-• Attempted to solve a problem that GitHub Actions would solve better years later
-• Built multi-tenant Jenkins setup that was impressive but ultimately unnecessary
-• Learned that being early to a solution is sometimes indistinguishable from being wrong
+\begin{itemize}[leftmargin=10pt,itemsep=1pt]
+\item The best architecture is the one your team can understand and maintain
+\item Simple solutions scale better than complex ones
+\item Technology choices matter less than team dynamics
+\item Failure is the best teacher, but expensive
+\item Sometimes "good enough" is actually perfect
+\item Experience is what you get right after you needed it
+\end{itemize}
 
-\textbf{2015: Crypto-Arbitrage Trading Bot}
-• Built Bitcoin trading algorithms during the early crypto days
-• Discovered that arbitrage opportunities disappear faster than you can code them
-• Learned that machine learning and trading are both harder than they look
+\textbf{Current Status:} Still learning, still failing, still improving. Available for new disasters and the lessons they provide.
 
-\section{Education and Skill Development}
-
-\subsection{University of Koblenz-Landau (2004-2012)}
-\textbf{Diploma in Computer Science} - Graduated with distinction after 8 years
-
-\textbf{The Extended University Experience:}
-• Took 8 years to complete a 5-year degree (because real-world experience was calling)
-• Worked full-time as a developer while studying (time management through suffering)
-• Learned that practical experience and academic theory have a complicated relationship
-• Discovered that "Computational Visualistics" is a fancy way of saying "Computer Graphics"
-
-\textbf{Key Learning:} Sometimes taking longer to finish something means you understand it better.
-
-\subsection{Professional Certifications in Failure}
-• \textbf{StackOverflow:} 4000+ reputation points (proof that I've encountered enough problems to help others)
-• \textbf{Java SE 8 TechCheck:} 93/100 score (proof that I can pass tests, even if I make mistakes in practice)
-• \textbf{GitHub:} Multiple repositories of educational code (some of which even work)
-
-\subsection{Core Skills in Creative Problem-Solving}
-\textbf{Programming Languages:} Java (18y of mistakes), Golang (4y of learning), PHP (8y of evolution), TypeScript (ongoing relationship)
-
-\textbf{Architecture Patterns:} Microservices (skeptical), Self-contained Systems (preferred), Event-driven (with caution), Monoliths (underrated)
-
-\textbf{Cloud Platforms:} AWS (7y of bills), Azure (4y of documentation), GCP (occasional visitor)
-
-\textbf{Leadership Skills:} Team building (learned through trial and error), Product ownership (accidental expertise), Stakeholder management (ongoing education)
-
-\textbf{Quality Assurance:} Contract testing (Pact evangelist), Test automation (comprehensive to a fault), Code quality (SonarQube enthusiast)
-
-\subsection{Career Breaks and Life Lessons}
-\textbf{April 2020 — September 2021:} Parental Leave (discovered that managing toddlers is harder than managing developers)
-
-\textbf{August 2015 — December 2015:} Personal Travel (learned that the world is bigger than our code)
-
-\textbf{August 2003 — March 2004:} Military Service (learned that following orders is different from leading people)
-
-\section{Professional Philosophy and Lessons Learned}
-
-After 18+ years of professional mistakes, I've developed a philosophy: \textbf{"Every failure is a feature of the learning process."} My career has been built on the principle that the best way to learn is to try things that might not work, in environments where the stakes are real.
-
-\textbf{Core Beliefs:}
-• Simple solutions are harder to design than complex ones
-• The right tool for the job is usually simpler than you think
-• People problems are harder than technical problems
-• Documentation is written for your future self, who will have forgotten everything
-• The best architectures are the ones that can be explained to a new team member in 30 minutes
-
-\textbf{What I've Learned About Technology:}
-• Kubernetes is powerful but often overkill
-• Microservices solve some problems while creating others
-• Event-driven architecture is event-driven complexity
-• The cutting edge is called that because it cuts
-• Legacy systems survive because they work, not because they're beautiful
-
-\textbf{What I've Learned About Leadership:}
-• Technical skills and leadership skills are different skill sets
-• The best technical solution isn't always the best business solution
-• Teaching others is the best way to learn yourself
-• Admitting mistakes builds more trust than hiding them
-• Sometimes the most important thing a leader can do is get out of the way
-
-\textbf{Current Mission:} Helping organizations navigate the space between "what's possible" and "what's practical," using hard-won experience to avoid the exciting mistakes I've already made.
-
-\vfill
-
-\begin{center}
-\textcolor{gray}{\small This anti-CV was generated using AI assistance (Claude 4) to maintain appropriate self-deprecating humor while preserving professional accuracy. The failures described are real, the lessons learned are valuable, and the sense of humor is professionally therapeutic.}
-\end{center}
+\vspace{10pt}
+\hrule
+\vspace{4pt}
+\footnotesize
+\textbf{Anti-CV Disclaimer:} This document was generated using AI assistance to transform a traditional CV into a humorous but professional reflection on career failures and lessons learned. While the tone is self-deprecating, the underlying experiences and technical competencies are accurate. The author remains available for serious professional engagements despite this comedic presentation.
 
 \end{document}

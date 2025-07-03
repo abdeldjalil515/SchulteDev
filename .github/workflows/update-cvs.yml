@@ -34,7 +34,7 @@ jobs:
   changes:
     runs-on: ubuntu-latest
     outputs:
-      cv: ${{ steps.filter.outputs.cv || 'true' }}
+      cv: ${{ steps.filter.outputs.cv || (github.event_name == 'workflow_dispatch' && 'true') }}
     steps:
       - uses: actions/checkout@v4
       - uses: dorny/paths-filter@v3

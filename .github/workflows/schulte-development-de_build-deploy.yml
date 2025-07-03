@@ -21,7 +21,7 @@ jobs:
   changes:
     runs-on: ubuntu-latest
     outputs:
-      website: ${{ steps.filter.outputs.website || 'true' }}
+      website: ${{ steps.filter.outputs.website || (github.event_name == 'workflow_dispatch' && 'true') }}
     steps:
       - uses: actions/checkout@v4
       - uses: dorny/paths-filter@v3

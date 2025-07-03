@@ -12,7 +12,7 @@
     ],
     "constraints": [
       "Valid LuaLaTeX with standard packages only.",
-      "Bundled fonts only.",
+      "Bundled fonts only. Only characters available in the font(s).",
       "Exactly {{PAGES}} filled pages.",
       "Prioritize most recent and impactful experiences.",
       "Omit older/less relevant content if needed to fit {{PAGES}} pages.",
@@ -21,7 +21,7 @@
     "templates": {
       "fullRebuild": [
         "Create dense {{PAGES}}-page {{CV_TYPE}}.",
-        "from career data:```markdown\n{{CAREER_DATA}}\n```.",
+        "From career data:```markdown\n{{CAREER_DATA}}\n```.",
         "Page layout: {{SHARED_PAGE_LAYOUT}}",
         "Constraints: {{SHARED_CONSTRAINTS}}",
         "{{TYPE_SPECIFIC_INSTRUCTIONS}}.",

